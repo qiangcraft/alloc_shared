@@ -1,6 +1,10 @@
 # Define custom allocator for std::shared_ptr
 
-For introduce memory pool in my project, use custom allocator for std::shared_ptr
+For introducing memory pool in my project, we can define a custom allocator for std::shared_ptr, overrided the `allocate` and `deallocate` methods.
+
+``` cpp
+std::allocate_shared<T>(custom_alloc, std::forward<Args>(args)...);
+```
 
 ## Test 
 
@@ -13,7 +17,7 @@ make
 ./memory_pool
 ```
 
-Allocate 10000 objects, `std::shared_ptr` vs `AllocShared`
+Allocate 10000 objects, the performance comparison result of `std::shared_ptr` and `AllocShared` is below:
 
 ```
 146199ns total, average : 14619us.
@@ -33,5 +37,3 @@ std::shared_ptr<Object> obj = AllocShared<Object>();
 * [SpinLock](https://rigtorp.se/spinlock/)
 * [Allocator](https://en.cppreference.com/w/cpp/memory/allocator)
 * [Building Your Own Allocators](https://docs.oracle.com/cd/E19205-01/819-3703/15_3.htm)
-
-
