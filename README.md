@@ -33,6 +33,7 @@ std::shared_ptr<Object> obj = AllocShared<Object>();
 
 ## Reference
 
+* [AppShift-MemoryPool](https://github.com/DevShiftTeam/AppShift-MemoryPool)
 * [Fixed Size Fast Memory Pool](https://arxiv.org/pdf/2210.16471)
 * [SpinLock](https://rigtorp.se/spinlock/)
 * [Allocator](https://en.cppreference.com/w/cpp/memory/allocator)
