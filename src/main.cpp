@@ -18,7 +18,7 @@ void TimeMeasure(void(*f)()){
     }
     auto end = std::chrono::high_resolution_clock::now();
     auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end-begin).count();
-    std::cout << duration << "ns total, average : " << duration / iterations << "us." << std::endl;
+    std::cout << duration << "us total, average : " << duration / iterations << "us." << std::endl;
 }
 
 void UseMakeShared() {
