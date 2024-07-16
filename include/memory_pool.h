@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * @author Sapir Shemer
+ * @author Sapir Shemer  https://github.com/DevShiftTeam/AppShift-MemoryPool
  */
 #pragma once
 #define MEMORYPOOL_DEFAULT_BLOCK_SIZE 1024 * 1024
