@@ -20,8 +20,8 @@ make
 Allocate 10000 objects, the performance comparison result of `std::shared_ptr` and `AllocShared` is below:
 
 ```
-146199ns total, average : 14619us.
-73266ns total, average : 7326us.
+146199us total, average : 14619us.
+73266us total, average : 7326us.
 ```
 
 ## Usage
