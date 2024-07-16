@@ -9,11 +9,10 @@ public:
 	void *Alloc(size_t sz);
 	void Free(void *p);
 	~MemoryPoolManager();
-
-private:
-	MemoryPoolManager();
 	MemoryPoolManager(const MemoryPoolManager &) = delete;
 	MemoryPoolManager &operator=(const MemoryPoolManager &) = delete;
+private:
+	MemoryPoolManager();
 	FastMemoryPool *pool_;
 	SpinLock spin_lock_;
 };
