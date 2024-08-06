@@ -1,6 +1,6 @@
 # Define custom allocator for std::shared_ptr
 
-For introducing memory pool in my project, we can define a custom allocator for std::shared_ptr, overrided the `allocate` and `deallocate` methods, then we can make shared_ptr by the `std::alloc_shared`: 
+For introducing memory pool in my project, we can define a custom allocator for std::shared_ptr, overrided the `allocate` and `deallocate` methods, then we can make shared_ptr by the `std::allocate_shared`: 
 
 ``` cpp
 std::allocate_shared<T>(custom_alloc, std::forward<Args>(args)...);
